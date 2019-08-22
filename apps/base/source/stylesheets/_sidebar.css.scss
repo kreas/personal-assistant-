@@ -1,0 +1,19 @@
+$link-color: #EEE;
+
+div#sidebar {
+  a#brand {
+    border: 1px solid darken($link-color, 30%);
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    margin: 1rem;
+    padding: 1.2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    color: $link-color;
+
+    &:hover {
+      background: rgba(0,0,0,0.1);
+    }
+  }
+}

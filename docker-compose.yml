@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  base:
+    build: ./apps/base/
+    command: middleman serve
+    working_dir: /app
+    volumes:
+      - ./apps/base:/app
+      - base_ruby_gems:/usr/local/bundle
+      - ./apps/address_book/client/dist/:/app/source/javascripts/address_book/
+    ports:
+      - 4567:4567
+      - 35729:35729
+
+  address_book:
+    image: node:12.8.1
+    working_dir: /app
+    volumes:
+      - ./apps/address_book:/app
+
+volumes:
+  base_ruby_gems:
