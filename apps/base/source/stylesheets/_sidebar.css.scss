@@ -1,6 +1,9 @@
+$background-color: #4842b7;
 $link-color: #EEE;
 
 div#sidebar {
+  background: $background-color;
+
   a#brand {
     border: 1px solid darken($link-color, 30%);
     font-weight: bold;
@@ -14,6 +17,16 @@ div#sidebar {
 
     &:hover {
       background: rgba(0,0,0,0.1);
+    }
+  }
+
+  nav a {
+    display: block;
+    padding: 0.4rem 1.2rem;
+    color: $link-color;
+
+    &:hover {
+      background-color: darken($background-color, 3%);
     }
   }
 }

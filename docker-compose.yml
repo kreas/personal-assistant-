@@ -13,11 +13,11 @@ services:
       - 4567:4567
       - 35729:35729
 
-  address_book:
+  address_book_client:
     image: node:12.8.1
     working_dir: /app
     volumes:
-      - ./apps/address_book:/app
+      - ./apps/address_book/client:/app
 
 volumes:
   base_ruby_gems:

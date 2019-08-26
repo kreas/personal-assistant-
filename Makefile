@@ -1,4 +1,5 @@
-serve: ;docker-compose up server
+serve: ;docker-compose up base
 
-# Verification
-verification.dev: ;docker-compose run verification npm run-script dev
+# Address Book
+address_book.client.dev: ;docker-compose run address_book_client npm run-script dev
+address_book.client.bash: ;docker-compose run address_book_client bash

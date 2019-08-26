@@ -10,3 +10,16 @@
 html, body {
   height: 100%;
 }
+
+table {
+  width: 100%;
+}
+
+.base-component {
+  display: block;
+  width: 100%;
+
+  &__pad-bottom {
+    margin-bottom: 1em;
+  }
+}
